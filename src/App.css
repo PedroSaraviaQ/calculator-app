@@ -2,7 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  /* Extras */
   font-family: sans-serif;
+  text-align: center;
 }
 
 html,
@@ -17,28 +20,41 @@ body,
 
 .App {
   color: white;
+  text-align: center;
+  width: 70%;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
 }
 
-input,
-button {
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 5px;
+h1 {
+  font-size: 24px;
+  margin-block: 20px;
+}
+
+p {
+  font-size: 30px;
+  margin: 30px;
 }
 
 input {
   display: block;
-  margin-bottom: 20px;
+  font-size: 20px;
+  width: 90%;
+  padding: 10px;
+  margin: 40px auto;
+  border-radius: 5px;
 }
 
 button {
+  display: block;
+  font-size: 20px;
+  width: 70%;
+  padding: 5px 10px;
+  margin: 5px auto;
   border: 1px solid gray;
-  background: whitesmoke;
-  margin-right: 5px;
+  height: 40px;
 }
 
 button:nth-last-child(2),
