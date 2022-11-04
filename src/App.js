@@ -41,7 +41,7 @@ function App() {
         <h1>Simplest Working Calculator 🔢📏</h1>
         <p ref={resultRef}>{result}</p>
         <input pattern="[0-9]" ref={inputRef} type="number" placeholder="Type a number" />
-        <p>{sign + inputRef.current.value}</p>
+        <p className="operation">{String(sign + inputRef.current?.value)}</p>
       </div>
       <div>
         <button onClick={plus}>add</button>
