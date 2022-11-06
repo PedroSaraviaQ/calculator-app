@@ -1,4 +1,4 @@
-name: Build & deploy
+name: Build & Deploy
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 13.x
+          node-version: [12.x, 14.x, 16.x]
 
       - name: Install NPM packages
         run: npm ci

@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h1>Simplest W0rking Calculator 🔢📏</h1>
+        <h1>Simplest Working Calculator 🔢📏</h1>
         <p ref={resultRef}>{result}</p>
         <input pattern="[0-9]" ref={inputRef} type="number" placeholder="Type a number" />
         <p className="operation">{String(sign + inputRef.current?.value)}</p>
